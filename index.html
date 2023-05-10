@@ -5,7 +5,14 @@
 	<link rel="icon" href="Images/form.png" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
+	<blockquote>
+	<center>
+	<img src="Images/logo.png" alt="logo.">
+	</center>
+	</blockquote>
+	
 	<h1>Order Form</h1>
 	<form>
 		<h2>Customer Information</h2>
@@ -23,7 +30,13 @@
 
 		<label for="description">How to get to the place:</label>
 		<textarea id="description" name="description"></textarea>
-
+	</form>
+	
+	<br>
+	<form>
+		<center>
+		<img class="menu "src="Images/menu.png" alt="menu.">
+		</center>
 		<h2>Order Details</h2>
 		<label for="product">Product:</label>
 		<select id="product" name="product" required>
@@ -33,8 +46,13 @@
 			<option value="Fries">Fries</option>
 			<option value="Drink">Drink</option>
 		</select>
-
+		
+		<hr color="#27592D" width="100%" size="5" align="center"><br>
+		
 		<div id="burger-options" class="product-options">
+		<center>
+		<img class="burg "src="Images/burger.jpg" alt="burger.">
+		</center>
 			<h2>Burger</h2>
 			<label for="burger-type">Type:</label>
 			<select id="burger-type" name="burger-type">
@@ -51,8 +69,8 @@
 				<input type="checkbox" name="burger-toppings[]" value="Onion">Onion<br>
 				<input type="checkbox" name="burger-toppings[]" value="Cucumber">Cucumber<br>
 				<input type="checkbox" name="burger-toppings[]" value="Bacon">Bacon<br>
-			</div>
-
+			</div><br>
+			
 			<label for="burger-bun">Bun:</label>
 			<select id="burger-bun" name="burger-bun">
 				<option value="">--Select a bun--</option>
@@ -60,17 +78,23 @@
 				<option value="Wheat Bun">Wheat Bun</option>
 				<option value="Honey Oat">Honey Oat</option>
 				<option value="Sugar-Free">Sugar-Free</option>
-			</select>
+			</select>			
 			
 			<br>
 			<label for="burger-quantity">Quantity:</label>
 			<input type="number" id="burger-quantity" name="burger-quantity" min="1" max="10" required>
-		</div>
-
+		</div><br>
+		
+		<hr color="#27592D" width="100%" size="5" align="center"><br>
+		
 		<div id="pasta-options" class="product-options">
+		<center>
+		<img class="burg "src="Images/pasta.jpg" alt="pasta.">
+		</center>		
 		<h2>Pasta</h2>
 		<label for="sauce">Sauce:</label>
 		<select id="sauce" name="sauce">
+			<option value="">--Select a sauce--</option>	
 			<option value="carbonara">Carbonara</option>
 			<option value="pesto">Pesto</option>
 			<option value="spaghetti">Spaghetti</option>
@@ -81,10 +105,17 @@
 		<br>
 		<label for="quantity">Quantity:</label>
 		<input type="number" id="quantity" name="quantity" min="1" max="10">
-  
-		<h2>Fries</h2>
+		
+		<br><br>
+		<hr color="#27592D" width="100%" size="5" align="center"><br>
+		
+		<center>
+		<img class="burg "src="Images/fries.jpg" alt="fries.">
+		</center>		
+		<h2>Fries</h2>	
 		<label for="size">Size:</label>
 		<select id="size" name="size">
+			<option value="">--Select a size--</option>
 			<option value="S">Small</option>
 			<option value="M">Medium</option>
 			<option value="L">Large</option>
@@ -93,6 +124,7 @@
 		<br>
 		<label for="flavor">Flavor:</label>
 		<select id="flavor" name="flavor">
+			<option value="">--Select a flavor--</option>
 			<option value="bbq">BBQ</option>
 			<option value="cheese">Cheese</option>
 			<option value="sour-cream">Sour Cream</option>
@@ -101,10 +133,18 @@
 		<br>
 		<label for="fries-quantity">Quantity:</label>
 		<input type="number" id="fries-quantity" name="fries-quantity" min="1" max="10">
-  
+		
+		<br><br>
+		<hr color="#27592D" width="100%" size="5" align="center">
+		
+		<br><br>
+		<center>
+		<img class="burg "src="Images/drinks.jpg" alt="drinks.">
+		</center>  
 		<h2>Drinks</h2>
 		<label for="drink-type">Type:</label>
 		<select id="drink-type" name="drink-type">
+			<option value="">--Select a drinks--</option>
 			<option value="cola">Cola</option>
 			<option value="lemonade">Lemonade</option>
 			<option value="iced-tea">Iced Tea</option>
@@ -113,6 +153,7 @@
 		<br>
 		<label for="drink-size">Size:</label>
 		<select id="drink-size" name="drink-size">
+			<option value="">--Select a size--</option>
 			<option value="S">Small</option>
 			<option value="M">Medium</option>
 			<option value="L">Large</option>
@@ -121,11 +162,16 @@
 		<br>
 		<label for="drink-quantity">Quantity:</label>
 		<input type="number" id="drink-quantity" name="drink-quantity" min="1" max="10">
-  
+		
+		<br><br>
+		<hr color="#27592D" width="100%" size="5" align="center"><br>
+		
 		<h2>Feedback</h2>
 		<label for="feedback">How can we improve the ordering form?</label>
 		<br>
 		<textarea id="feedback" name="feedback"></textarea>
+  
+  		<hr color="#27592D" width="100%" size="5" align="center"><br>
   
 		<h2>Delivery</h2>
 		<input type="radio" id="delivery" name="delivery-option" value="delivery">
